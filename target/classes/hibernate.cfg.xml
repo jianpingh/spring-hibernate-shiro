@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!-- This file is largely provided for IDE/tool support, and is NOT used at runtime -->
+
+<hibernate-configuration>
+  <session-factory>
+    <!-- DB schema will be updated if needed -->
+    <property name="hbm2ddl.auto">update</property>
+
+    <mapping class="com.hjp.shiro.model.Role"/>
+    <mapping class="com.hjp.shiro.model.User"/>
+
+  </session-factory>
+</hibernate-configuration>
